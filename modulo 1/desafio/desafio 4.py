@@ -1,2 +1,3 @@
 n1 = int(input('Digite um número: '))
-print(type(n1))
+#mostrar qual o tipo de n1
+print(type(n1)) 
