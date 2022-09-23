@@ -7,3 +7,7 @@ print(f'é espaço: {n1.isspace()}')
 print(f'é número: {n1.isnumeric()}')
 #diz se é palavra
 print(f'é palavra: {n1.isalpha()}')
+#diz se tudo está maiusculo
+print(f'tudo maiusculo: {n1.isupper()}')
+#diz se tudo está minusculo
+print(f'tudo minusculo: {n1.islower()}')
