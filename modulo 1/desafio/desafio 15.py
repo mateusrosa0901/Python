@@ -1,5 +1,6 @@
-km = float(input('Km rodado: '))
 d = int(input('Dias alugados: '))
+km = float(input('Km rodado: '))
+
 
 diaria = d * 60
 kilomet = km * 0.15
