@@ -1,0 +1,11 @@
+nome = input('Digite seu nome completo: ')
+mai = nome.upper()
+minu = nome.lower()
+div = nome.split()
+con = len(div[:][:])
+
+print(mai)
+print('-'*20)
+print(minu)
+print('-'*20)
+print(con)
