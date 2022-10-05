@@ -1,12 +1,15 @@
 nome = input('Digite seu nome completo: ')
 mai = nome.upper()
 minu = nome.lower()
-sesp = nome.replace(' ' , '') #Remove os espaços
-con = len(sesp)
+semespaço = nome.replace(' ' , '') #Remove os espaços
+conta = len(semespaço)
+separar = nome.split()
+conta2 = len(separar[0])
 
 print(mai)
 print('-'*20)
 print(minu)
 print('-'*20)
-print(con)
+print(conta)
 print('-'*20)
+print(conta2)
