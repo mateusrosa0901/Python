@@ -14,6 +14,17 @@ if n2 > n1 and n2 > n3:
 if n3 > n1 and n3 > n2:
     print(f'{n3} é o maior número.')
 
+#n1 menor
+if n1 < n2 and n1 < n3:
+    print(f'{n1} é o menor número.')
+
+#n2 menor
+if n2 < n1 and n2 < n3:
+    print(f'{n2} é o menor número')
+#n3 menor
+if n3 < n1 and n3 < n2:
+    print(f'{n3} é o menor número')
+    
 #igual
 if n1 == n2 and n1 == n3:
     print(f'Os três números são iguais.')
