@@ -17,4 +17,5 @@ print('\033[37mCinza\033')
 print('=-='*30)
 #fundo
 print('\033[40mBranco\033')
-print('\033[41mVermelho\033')
+print('\033[41mVermelho')
+print('\033[42mVerde')
