@@ -11,3 +11,4 @@ elif idade == 18:
 
 elif idade > 18:
     print('Já passou o ano de você se alistar.')
+    print(f'Você deveria se alistar em {(18-idade)+date.today().year}')
