@@ -36,9 +36,13 @@ elif ec == 'Pedra' and eu == 3:
 elif ec == 'Papel' and eu == 1:
     print(f'Computador: {ec}')
     print('Jogador: Pedra')
-    print(f'\033[32mParabéns\033 você ganhou!')
+    print('\033[31mVocê perdeu!\033')
 
 elif ec == 'Tesoura' and eu == 2:
     print(f'Computador: {ec}')
     print('Jogador: Papel')
-    print(f'\033[32mParabéns\033 você ganhou!')
+    print('\033[31mVocê perdeu!\033')
+
+#empate
+elif ec == eu:
+    print('\033[33mEmpate!\033')
