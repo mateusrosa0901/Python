@@ -11,6 +11,7 @@ print('='*20)
 
 eu = int(input('Escolha sua jogada: '))
 
+#jogador ganha
 if eu == 1 and ec == 'Tesoura':
     print(f'Computador: {ec}')
     print(f'Jogador: Pedra')
@@ -23,4 +24,21 @@ elif eu == 2 and ec == 'Pedra':
 
 elif eu == 3 and ec == 'Papel':
     print(f'Computador: {ec}')
-    print('Jogador: ')
+    print('Jogador: Tesoura')
+    print(f'\033[32mParabéns\033 você ganhou!')
+
+#pc ganha
+elif ec == 'Pedra' and eu == 3:
+    print(f'Computador: {ec}')
+    print('Jogador: Tesoura')
+    print('\033[31mVocê perdeu!\033')
+
+elif ec == 'Papel' and eu == 1:
+    print(f'Computador: {ec}')
+    print('Jogador: Pedra')
+    print(f'\033[32mParabéns\033 você ganhou!')
+
+elif ec == 'Tesoura' and eu == 2:
+    print(f'Computador: {ec}')
+    print('Jogador: Papel')
+    print(f'\033[32mParabéns\033 você ganhou!')
