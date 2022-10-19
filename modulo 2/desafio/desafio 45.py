@@ -44,5 +44,7 @@ elif ec == 'Tesoura' and eu == 2:
     print('\033[31mVocê perdeu!\033')
 
 #empate
-elif ec == eu:
+else:
+    print(f'Computador: {ec}')
+    print(f'Jogador: {ec}')
     print('\033[33mEmpate!\033')
