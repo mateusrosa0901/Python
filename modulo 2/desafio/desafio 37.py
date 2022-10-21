@@ -14,3 +14,5 @@ elif base == 2:
 
 elif base == 3:
     print(hex(n))
+else:
+    print('Opção inválida.')
