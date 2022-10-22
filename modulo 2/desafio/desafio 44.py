@@ -20,3 +20,6 @@ elif pagamento == 3:
 
 elif pagamento == 4:
     print(f'Total: R${vproduto+(vproduto*0.2)}')
+
+else:
+    print('Opção inválida de pagamento.')
