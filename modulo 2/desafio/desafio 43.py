@@ -1,7 +1,7 @@
 peso = float(input('Digite seu peso: '))
 altura = float(input('Digite sua altura: '))
 
-icm = peso / (altura*altura)
+icm = peso / (altura**2)
 print(f'{icm:.1f}')
 
 if icm < 18.5:
