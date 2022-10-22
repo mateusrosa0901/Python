@@ -1,6 +1,7 @@
 from datetime import date
 ano = int(input('Ano de nascimento: '))
 idade = date.today().year - ano
+print(f'Idade: {idade}')
 
 if idade <= 9:
     print('MIRIM')
