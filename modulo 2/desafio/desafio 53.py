@@ -1,5 +1,3 @@
-frase = input('Digite uma frase: ')
-ffrase = frase.upper().replace(' ','')
-
-for l in range(0,len(ffrase),-1):
+frase = input('Digite uma frase: ').strip().upper().replace(' ' , '')
+for l in range(len(ffrase),0,-1):
     print(l)
