@@ -1,4 +1,3 @@
-p = ''
 n = int(input('Digite um número: '))
 d = 0
 
