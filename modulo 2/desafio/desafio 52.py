@@ -1,6 +1,12 @@
-
+p = ''
 n = int(input('Digite um número: '))
+d = 0
 
-for c in range(1,n):
-    if n % c == 1:
-        print('Primo')
+for c in range(1,n+1):
+    if n % c == 0:
+        d += 1   
+
+if d == 2:
+    print(f'{n} é um número primo.')
+else:
+    print(f'{n} não é um número primo.')
