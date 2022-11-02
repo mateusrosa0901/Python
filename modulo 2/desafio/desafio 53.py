@@ -4,6 +4,7 @@ j = ''.join(p)
 i = ''
 
 for l in range(len(j) -1, -1, -1):
+    #soma a letra usando a palavra e o critério l
     i += j[l]
 
 if i == j:
