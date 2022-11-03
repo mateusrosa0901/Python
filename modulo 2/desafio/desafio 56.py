@@ -9,15 +9,14 @@ for p in range(1,5):
     print('='*30)
     nome = input('Digite seu nome: ')
     idade = int(input('Digite sua idade: '))
-    sexo = input('Seu sexo[F/M]: ')
+    sexo = input('Seu sexo[F/M]: ').strip().upper()
 
     sidade += idade
-    fs = sexo.strip().upper()
-    if fs == 'M':
+    if sexo == 'M':
         if idade > velho:
             velho = idade
             nv = nome
-    if fs == 'F':
+    elif sexo == 'F':
         if idade < 20:
             nmv += 1
 
