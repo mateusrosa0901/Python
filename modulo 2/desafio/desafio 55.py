@@ -3,6 +3,7 @@ me = ma
 
 for p in range(0,6):
     peso = float(input('Digite o seu peso: '))
+    #igualar as variaveis e depois trabalhar com elas
     if p == 0:
         ma = peso
         me = peso
