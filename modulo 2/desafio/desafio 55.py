@@ -1,11 +1,12 @@
 ma = 0
-me = 99999999
+me = ma
 
 for p in range(0,6):
     peso = float(input('Digite o seu peso: '))
 
     if peso >= ma:
         ma = peso
+        me = ma
     elif peso <= me:
         me = peso
 
