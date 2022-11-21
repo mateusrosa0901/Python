@@ -10,9 +10,14 @@ while o != 5:
     print('[3] Maior')
     print('[4] Novos números')
     print('[5] Sair')
+
     print('='*50)
     o = int(input('Escolha uma opção: '))
     print('='*50)
+
+    if o > 5:
+        while o > 5:
+            o = int(input('Opção inválida, digite novamente: '))
     if o == 1:
         print(f'{n1} + {n2} = {n1+n2}')
     elif o == 2:
