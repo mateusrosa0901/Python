@@ -1,8 +1,9 @@
-o = 4
+o = 0
+n1 = int(input('Digite o 1° número: '))
+n2 = int(input('Digite o 2° número: '))
 while o != 5:
     print('='*50)
-    n1 = int(input('Digite o 1° número: '))
-    n2 = int(input('Digite o 2° número: '))
+    
 
     print('OPÇÕES')
     print('[1] Somar')
@@ -27,5 +28,8 @@ while o != 5:
             print(f'{n1} é maior que {n2}')
         else:
             print(f'{n2} é maior que {n1}')
-
+    elif o == 4:
+        n1 = int(input('Digite o 1° número: '))
+        n2 = int(input('Digite o 2° número: '))
+        
 print('FIM')
