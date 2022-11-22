@@ -18,7 +18,7 @@ while o != 5:
     if o > 5:
         while o > 5:
             o = int(input('Opção inválida, digite novamente: '))
-    if o == 1:
+    elif o == 1:
         print(f'{n1} + {n2} = {n1+n2}')
     elif o == 2:
         print(f'{n1} X {n2} = {n1*n2}')
