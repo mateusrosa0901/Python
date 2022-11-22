@@ -2,6 +2,7 @@ continuar = 'S'
 n = 0
 c = 0
 s = 0
+
 while continuar == 'S':
     print('='*50)
     n = int(input('Digite um número: '))
