@@ -1,8 +1,8 @@
 import random
 c = 1
-
 na = random.randrange(0,10)
 nu = int(input('Digite um número de 0 a 10: '))
+
 if nu > na:
     print('Menos... Tente novamente.')
 elif nu < na:
