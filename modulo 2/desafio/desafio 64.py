@@ -1,6 +1,7 @@
 n = 0
 s = 0
 c = 0
+
 while n != 999:
     print('='*50)
     print('Para sair digite 999')
