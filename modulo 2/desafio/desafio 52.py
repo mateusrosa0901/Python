@@ -1,11 +1,11 @@
-n = int(input('Digite um número: '))
-d = 0
+num = int(input('Digite um número: '))
+divsi = 0
 
-for c in range(1,n+1):
-    if n % c == 0:
-        d += 1   
+for c in range(1,num+1):
+    if num % c == 0:
+        divsi += 1   
 
-if d == 2:
-    print(f'{n} é um número primo.')
+if divsi == 2:
+    print(f'{num} é um número primo.')
 else:
-    print(f'{n} não é um número primo.')
+    print(f'{num} não é um número primo.')
