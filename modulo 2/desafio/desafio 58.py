@@ -1,4 +1,5 @@
 import random
+
 c = 1
 na = random.randrange(0,10)
 nu = int(input('Digite um número de 0 a 10: '))
