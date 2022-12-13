@@ -1,13 +1,13 @@
 continuar = 'S'
-n = 0
-c = 0
-s = 0
+num = 0
+cont = 0
+soma = 0
 
 while continuar == 'S':
     print('='*50)
-    n = int(input('Digite um número: '))
-    c += 1
-    s += n
+    num = int(input('Digite um número: '))
+    cont += 1
+    soma += num
     continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
     
     if continuar != 'S' and continuar != 'N':
@@ -15,6 +15,6 @@ while continuar == 'S':
         continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
 
 print('='*50)
-print(f'Média dos números digitados: {s/c}')
-print(f'Soma dos números digitados: {s}')
+print(f'Média dos números digitados: {soma/cont}')
+print(f'Soma dos números digitados: {soma}')
 print('='*50)
