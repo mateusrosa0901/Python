@@ -1,9 +1,12 @@
-num = int(input('Digite o termo: '))
+num = int(input('Digite o primeiro número da PA: '))
 razao = int(input('Digite a razão: '))
-dist = int(0)
+termo = num
 c = int(0)
 
-while dist == num + (10-1) * razao:
-    dist += 1
-    num += razao
-    print(num)
+while c <= 10:
+    if c < 10:
+        print(termo , end=' -> ')
+    else:
+        print(termo)
+    termo += razao
+    c += 1
