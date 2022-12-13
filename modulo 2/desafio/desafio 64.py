@@ -1,13 +1,15 @@
-n = 0
-s = 0
-c = 0
+num = int(0)
+soma = int(0)
+cont = int(0)
 
-while n != 999:
+while num != 999:
     print('='*50)
     print('Para sair digite 999')
-    n = int(input('Digite um número: '))
-    if n != 999:
-        s += n
-        c += 1
-print(f'Você digitou {c} números.')
-print(f'{s} é a soma desses números.')
+    num = int(input('Digite um número: '))
+    if num != 999:
+        soma += num
+        cont += 1
+
+print('='*50)
+print(f'Você digitou {cont} números.')
+print(f'{soma} é a soma desses números.')

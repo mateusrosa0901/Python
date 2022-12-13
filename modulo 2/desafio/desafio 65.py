@@ -8,11 +8,11 @@ while continuar == 'S':
     n = int(input('Digite um número: '))
     c += 1
     s += n
-    continuar = input('Você deseja continuar? [S/N]: ').upper()
+    continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
     
     if continuar != 'S' and continuar != 'N':
         print('Valor inválido.')
-        continuar = input('Você deseja continuar? [S/N]: ').upper()
+        continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
 
 print('='*50)
 print(f'Média dos números digitados: {s/c}')
