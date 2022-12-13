@@ -1,10 +1,10 @@
-n = int(input('Digite um número para saber seu fatorial: ') )
+num = int(input('Digite um número e veja seu fatorial: '))
+fatorial = num
+numAux = num
 
-f = 1
-c = 1
+while num > 1:
+    num = num - 1
+    fatorial = num * fatorial
 
-while c <= n:
-    f *= c
-    c += 1
-
-print(f)
+print(f'{numAux}! = {fatorial}')
+    
