@@ -4,7 +4,7 @@ numAux = num
 
 while num > 1:
     num = num - 1
-    fatorial = num * fatorial
+    fatorial =  fatorial * num
 
 print(f'{numAux}! = {fatorial}')
     
