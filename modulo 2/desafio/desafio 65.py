@@ -10,7 +10,7 @@ while continuar == 'S':
     soma += num
     continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
     
-    if continuar != 'S' and continuar != 'N':
+    while continuar != 'S' and continuar != 'N':
         print('Valor inválido.')
         continuar = input('Você deseja continuar? [S/N]: ').upper().strip()[0]
 
