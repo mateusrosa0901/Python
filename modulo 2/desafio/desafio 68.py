@@ -17,11 +17,9 @@ while True:
         print('-=-'*20)
         escolhaJogador = str(input('Valor inválido, digite novamente[I/P]: ')).upper().strip()[0]
 
-    numComputador = int(random.randrange(11))
-    print(numComputador)
+    numComputador = int(random.randrange(11)) 
 
     soma = numJogador + numComputador
-    print(soma)
 
     if soma % 2 == 0 and escolhaJogador == 'P':
         print('você venceu')
