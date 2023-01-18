@@ -7,10 +7,12 @@ num = (n1 , n2 , n3 , n4)
 
 print('-'*20)
 print(f'O número 9 apareceu {num.count(9)} vezes.')
+
 if 3 in num:
     print(f'O número 3 apareceu primeiro na posição {num.index(3)}.')
 else:
     print(f'O número 3 não foi digitado.')
+
 print('Números pares digitados:')
 
 for c in range(len(num)):
