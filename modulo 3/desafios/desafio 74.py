@@ -4,7 +4,7 @@ num = (random.randrange(10) , random.randrange(10) , random.randrange(10) , rand
 numMaior = int(0)
 numMenor = int(0)
 
-print(f'Números aléatorios: {num}')
+print(f'Números aleatórios: {num}')
 
 for c in range(len(num)):
     if c == 0:
