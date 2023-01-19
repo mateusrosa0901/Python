@@ -13,8 +13,8 @@ if 3 in num:
 else:
     print(f'O número 3 não foi digitado.')
 
-print('Números pares digitados:')
+print('Números pares digitados: ' , end='')
 
 for c in range(len(num)):
     if num[c] % 2 == 0:
-        print(num[c])
+        print(num[c] , end=' ')
