@@ -1,19 +1,7 @@
-palavras = ('ola' , 'bom' , 'legal')
-qtdA = int(0)
-qtdE = int(0)
-qtdI = int(0)
-qtdO = int(0)
-qtdU = int(0)
+palavras = ('carro' , 'bicicleta' , 'tarde')
 
-for c in range(len(palavras)):
-    print(f'{palavras[c]} -')
-    qtdA = palavras[c].count('a')
-    print(' a '*qtdA , end='')
-    qtdE = palavras[c].count('e')
-    print(' e '*qtdE , end='')
-    qtdI = palavras[c].count('i')
-    print(' i '*qtdI , end='')
-    qtdO = palavras[c].count('o')
-    print(' o '*qtdO , end='')
-    qtdU = palavras[c].count('u')
-    print(' u '*qtdU , end='')
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos: ' , end=' ')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra , end=' ')
