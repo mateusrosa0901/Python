@@ -20,6 +20,8 @@ for c in range(0,5):
             menorVal = valores[c]
             posMenorVal = valores.index(menorVal)
 
+print('')
+print('-'*20)
 print(f'lista: {valores}')
 print(f'{maiorVal} é o maior valor e está na {posMaiorVal+1}° posição.')
 print(f'{menorVal} é o menor valor e está na {posMenorVal+1}° posição.')
