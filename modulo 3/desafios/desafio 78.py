@@ -23,11 +23,15 @@ for c in range(0,5):
 print('')
 print('-'*20)
 print(f'\nlista: {valores}')
+
 print(f'\n{maiorVal} é o maior valor e está na posição: ' , end=' ')
+
 for pos , num in enumerate(valores):
     if num == maiorVal:
         print(f'{pos+1}°' , end=' ')
+
 print(f'\n{menorVal} é o menor valor e está na posição: ' , end=' ')
+
 for pos , num in enumerate(valores):
     if num == menorVal:
         print(f'{pos+1}°' , end=' ')
