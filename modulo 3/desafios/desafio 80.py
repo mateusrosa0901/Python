@@ -1,15 +1,17 @@
 valores = []
 
 for c in range(0,5):
-    num = int(input(f'Digite o {c+1}° valor: '))
-    if c == 0:
+    num = int(input('Digite um número: '))
+
+    if c == 0 or num > valores[-1]:
         valores.append(num)
-
     else:
-        for n in range(len(valores)):
-            if num > valores[n] and num < valores[n+1]:
-                valores.insert(valores.index(n+1) , num)
-            #if num < n:
-                #valores.insert(valores.index(n) , num)
-
+        pos = 0
+        while pos < len(valores):
+            if num <= valores[pos]:
+                valores.insert(pos , num)
+                break
+            pos += 1
+print('')
+print('-=-'*20)
 print(valores)
