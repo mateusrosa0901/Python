@@ -10,6 +10,8 @@ for c in range(0, 7):
     else:
         numI.append(numAux)
 
+numP.sort()
+numI.sort()
 num.append(numP[:])
 num.append(numI[:])
 
