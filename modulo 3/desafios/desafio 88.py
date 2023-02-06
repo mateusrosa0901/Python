@@ -1,5 +1,6 @@
 import random
 from time import sleep
+
 jogos = []
 jogosAux = []
 qtdJogos = int(0)
