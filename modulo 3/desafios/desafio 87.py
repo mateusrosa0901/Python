@@ -3,6 +3,7 @@ linha2 = [[], [], []]
 linha3 = [[], [], []]
 somaPar = int(0)
 somaColuna = int(0)
+maiorNum = int(0)
 
 for p in range(len(linha1)):
     linha1[p].append(int(input(f'Digite o conteúdo da posição (0,{p}): ')))
@@ -32,3 +33,9 @@ print(f'Soma dos números pares: {somaPar}')
 somaColuna = linha1[2][0] + linha2[2][0] + linha3[2][0]
 
 print(f'Soma da 3° coluna: {somaColuna}')
+
+for num in range(len(linha2)):
+    if linha2[num][0] >= maiorNum:
+        maiorNum = linha2[num][0]
+
+print(f'Maior número da linha 2: {maiorNum}')
