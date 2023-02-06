@@ -2,6 +2,7 @@ linha1 = [[], [], []]
 linha2 = [[], [], []]
 linha3 = [[], [], []]
 somaPar = int(0)
+somaColuna = int(0)
 
 for p in range(len(linha1)):
     linha1[p].append(int(input(f'Digite o conteúdo da posição (0,{p}): ')))
@@ -26,5 +27,8 @@ for n in linha3:
     if n[0] % 2 == 0:
         somaPar += n[0]
 
-
 print(f'Soma dos números pares: {somaPar}')
+
+somaColuna = linha1[2][0] + linha2[2][0] + linha3[2][0]
+
+print(f'Soma da 3° coluna: {somaColuna}')
