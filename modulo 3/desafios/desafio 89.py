@@ -21,17 +21,19 @@ while True:
     if loop == 'N':
         break
 
+print('-=-'*15)
 print(boletim)
 print('id | nome | média')
 for f in range(len(boletim)):
     print(f'{f} | {boletim[f][0][0]} | {boletim[f][0][2]:.1f}')
 
 while True:
+    print('-'*20)
     id = int(input('Digite o ID do aluno para ver suas notas (999 para sair): '))
 
     if id == 999:
         break
 
-    print(f'{id} | {boletim[id][0][0]} | {boletim[id][0][1]:.1f}')
+    print(f'{id} | {boletim[id][0][0]} | {boletim[id][0][1]}')
 
 print('FIM')
