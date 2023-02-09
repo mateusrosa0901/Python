@@ -21,5 +21,7 @@ for k, v in fichaJogador.items():
     print(f'{k}: {v}')
 
 print('-=-'*20)
+print(f'O jogador {fichaJogador["nome"]}, jogou {partidas} partidas:')
 for g in range(len(gols)):
-    print(f'Na partida {g}, fez {gols[g]} gols.')
+    print(f'   -> Na partida {g}, fez {gols[g]} gols.')
+print(f'Um total de {totGols} gols.')
