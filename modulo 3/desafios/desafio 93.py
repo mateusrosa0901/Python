@@ -11,10 +11,7 @@ for p in range(partidas):
 
 fichaJogador['gols'] = gols[:]
 
-for g in gols:
-    totGols += g
-
-fichaJogador['total'] = totGols
+fichaJogador['total'] = sum(gols)
 
 print('-=-'*20)
 for k, v in fichaJogador.items():
