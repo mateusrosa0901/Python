@@ -14,10 +14,7 @@ while True:
 
     ficha['gols'] = gols[:]
 
-    for g in gols:
-        totGols += g
-
-    ficha['total'] = totGols
+    ficha['total'] = sum(gols)
     totGols = int(0)
 
     jogadores.append(ficha.copy())
@@ -36,13 +33,14 @@ print('id | nome | gols por partida | total')
 for j in range(len(jogadores)):
     print(f'{j} | {jogadores[j]["nome"]} | {jogadores[j]["gols"]} | {jogadores[j]["total"]}')
 
-while True:
+while cod != 999:
     cod = int(input('Digite o id para ver mais detalhes: '))
+
+    while cod > len(jogadores) - 1 and cod != 999:
+        cod = int(input('Digite o id para ver mais detalhes: '))
+
     if cod == 999:
         break
-
-    while cod > len(jogadores) - 1:
-        cod = int(input('Digite o id para ver mais detalhes: '))
 
     print(f'O jogador {jogadores[cod]["nome"]}, jogou {len(jogadores[cod]["gols"])} partidas:')
     for g in range(len(jogadores[cod]["gols"])):
