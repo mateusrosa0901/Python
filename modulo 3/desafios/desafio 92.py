@@ -14,8 +14,7 @@ if ficha['ctps'] != 0:
     ficha['salario'] = float(input('Digite seu salário: R$'))
     diferença = date.today().year - ficha['contrataçao']
     idadeAposen = idade - diferença
-    for c in range(0, 35):
-        idadeAposen += 1
+    idadeAposen += 35
     ficha['idadeAposentado'] = idadeAposen
 
 print('-=-'*20)
