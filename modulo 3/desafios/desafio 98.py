@@ -1,13 +1,12 @@
-def contador(i, f, p):
-    for n in range(i, f+1):
+def contador1(i, f, p):
+    for n in range(i, f+1, p):
         print(n, end=' -> ')
     print('FIM')
 
     print('-=-'*10)
 
-    i = 10
-    f = 0
-    p = -2
+
+def contador2(i, f, p):
 
     for n in range(i, f-1, p):
         print(n, end=' -> ')
@@ -15,9 +14,8 @@ def contador(i, f, p):
 
     print('-=-'*10)
 
-    i = int(input('Digite o número de início: '))
-    f = int(input('Digite o número de fim: '))
-    p = int(input('Digite quantos números a contagem vai pular: '))
+
+def contador3(i, f, p):
 
     if i > f:
         f -= 1
@@ -37,4 +35,11 @@ def contador(i, f, p):
     print('FIM')
 
 
-contador(1, 10, 1)
+contador1(1, 10, 1)
+contador2(10, 0, -2)
+
+ini = int(input('Digite o número de início: '))
+fim = int(input('Digite o número de fim: '))
+passo = int(input('Digite quantos números a contagem vai pular: '))
+
+contador3(ini, fim, passo)
