@@ -1,6 +1,6 @@
 from time import sleep
 def maior(* num):
-    print('='*len(num))
+    print('='*(len(num)*6))
     m = 0
     c = 0
     for n in num:
@@ -11,7 +11,7 @@ def maior(* num):
 
     print('FIM')
     print(f'{c} números foram informados e o maior é: {m}')
-    print('='*len(num))
+    print('='*(len(num)*6))
 
 
 maior(5, 8, 4, 7, 45, 8, 7, 6, 3, 5, 1)
