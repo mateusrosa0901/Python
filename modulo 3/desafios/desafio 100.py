@@ -14,6 +14,6 @@ def soma(lst):
     print(f'Soma dos números aleatórios pares: {sp}')
 
 
-números = [1, 5, 6, 4, 7, 12, 45, 32, 15, 13]
+numeros = [1, 5, 6, 4, 7, 12, 45, 32, 15, 13]
 
-sorteio(números)
+sorteio(numeros)
