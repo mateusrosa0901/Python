@@ -21,6 +21,15 @@ def contador3(i, f, p):
         f -= 1
     else:
         f += 1
+
+    p = mudaPasso(i, f, p)
+
+    for n in range(i, f, p):
+        print(n, end=' -> ')
+    print('FIM')
+
+
+def mudaPasso(i, f, p):
     if i > f and p >= -1:
         p *= -1
     if i < f and p <= -1:
@@ -30,10 +39,7 @@ def contador3(i, f, p):
     elif i < f and p == 0:
         p = 1
 
-    for n in range(i, f, p):
-        print(n, end=' -> ')
-    print('FIM')
-
+    return p
 
 contador1(1, 10, 1)
 contador2(10, 0, -2)
