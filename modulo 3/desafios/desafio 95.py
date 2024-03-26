@@ -1,7 +1,6 @@
 ficha = {}
 jogadores = []
 gols = []
-totGols = int(0)
 cod = int(0)
 
 while True:
@@ -15,7 +14,6 @@ while True:
     ficha['gols'] = gols[:]
 
     ficha['total'] = sum(gols)
-    totGols = int(0)
 
     jogadores.append(ficha.copy())
     ficha.clear()
@@ -28,6 +26,7 @@ while True:
 
     if loop == 'N':
         break
+
 print('-=-'*20)
 print('id | nome | gols por partida | total')
 for j in range(len(jogadores)):
