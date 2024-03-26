@@ -5,6 +5,7 @@ def dobra(lst):
         val.append(v)
     print(val)
 
+
 val = [8, 3, 2, 7]
 
 dobra(val[:])
