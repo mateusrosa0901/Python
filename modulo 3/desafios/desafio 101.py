@@ -1,8 +1,8 @@
-import datetime
+from datetime import date
 
 
 def votar(ano_nas):
-    idade = datetime.date.today().year - ano_nas
+    idade = date.today().year - ano_nas
 
     if 16 <= idade < 18:
         return [idade, 'VOTO OPCIONAL.']
