@@ -5,9 +5,11 @@ def votar(ano_nas):
     idade = datetime.date.today().year - ano_nas
 
     if 16 <= idade < 18:
-        return [idade, 'Voto não obrigatório.']
-    elif idade >= 18:
+        return [idade, 'VOTO OPCIONAL.']
+    elif 18 <= idade < 65:
         return [idade, 'Voto obrigatório.']
+    elif idade >= 65:
+        return [idade, 'VOTO OPCIONAL.']
     else:
         return [idade, 'Não pode votar.']
 
