@@ -18,7 +18,7 @@ def inicio():
 def pyHelp(func):
     sleep(0.5)
     print('\033[1;97;46m-' * 200)
-    print(f'Acessando manual do {func}')
+    print(f'Acessando manual do \033[1;93;46m{func}\033[1;97;46m')
     print('-' * 200, '\033[1;40;47m')
 
     sleep(0.5)

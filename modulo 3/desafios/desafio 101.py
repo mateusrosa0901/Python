@@ -1,7 +1,5 @@
-from datetime import date
-
-
 def votar(ano_nas):
+    from datetime import date
     idade = date.today().year - ano_nas
 
     if 16 <= idade < 18:

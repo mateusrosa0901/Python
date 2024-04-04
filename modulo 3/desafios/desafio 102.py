@@ -23,4 +23,5 @@ def fatorial(num, show=False):
     else:
         return fat
 
+
 print(fatorial(5, True))
