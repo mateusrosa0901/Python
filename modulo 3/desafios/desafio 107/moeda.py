@@ -38,7 +38,7 @@ def moeda(valor):
     return f'R${valor:.2f}'
 
 
-def resumo(valor=0, pAumentar=0, pDiminuir=0):
+def resumo(valor, pAumentar=0.0, pDiminuir=0.0):
     print('-'*35)
     print(f'{'Resumo':^35}')
     print('-'*35)
@@ -51,5 +51,5 @@ def resumo(valor=0, pAumentar=0, pDiminuir=0):
     print(f'Valor analizado: {'R$':>4} {valor:<10,.2f}')
     print(f'Dobro do valor: {'R$':>5} {dob:<10,.2f}')
     print(f'Metade do valor: {'R$':>4} {m:<10,.2f}')
-    print(f'{pAumentar}% de aumento: {'R$':>5} {a:<10,.2f}')
-    print(f'{pDiminuir}% de redução: {'R$':>5} {d:<10,.2f}')
+    print(f'{pAumentar:.1f}% de aumento: {'R$':>3} {a:<10,.2f}')
+    print(f'{pDiminuir:.1f}% de redução: {'R$':>3} {d:<10,.2f}')

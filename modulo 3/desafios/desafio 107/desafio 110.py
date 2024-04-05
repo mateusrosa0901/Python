@@ -1,3 +1,4 @@
 import moeda
 
-moeda.resumo(100, 20, 30)
+valor = float(input('Digite um valor: R$'))
+moeda.resumo(valor, 20, 30)
