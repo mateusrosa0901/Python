@@ -16,7 +16,7 @@ def leiaInt():
 def leiaFloat():
     while True:
         try:
-            real = float(input('Digite um número inteiro: '))
+            real = float(input('Digite um número real: '))
 
             return real
 
